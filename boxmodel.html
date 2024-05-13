@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+
+
+            /* margin: 20px 30px 20px 70px; */
+            /* top,right,bottom,left */
+
+            /* margin: 10px 20px 30px; */
+            /* 10px for top, 20px for left and right, 30px for bottom */
+
+            /* margin:20px 40px; */
+            /* 20px for top and bottom, 40px for left and right */
+
+            margin: 50px;
+            /* it will applicable for all the sides */
+
+            /* border-width: 10px;
+            border-style:double;
+            border-color: blue; */
+
+            border:10px solid green;
+
+            /* if you want to adjust each side of the border */
+            /* border-top-width: 10px;
+            border-top-style: dashed;
+            border-top-color: blue ; */
+
+            /* shorthand property of color */
+            border-color: blue cyan greenyellow violet;
+
+            /* border-radius helps us to bend the corners */
+            /* border-radius: 50%; */
+
+            /* border-radius: 10% 30%; */
+            /* 10% indicates top-left and bottom-right, 30% indicates top-right and bottom-left */
+
+            /* border-radius: 48% 52% 71% 29% / 65% 58% 42% 35% ; */
+
+            text-align: justify;
+            /* padding: 20px 40px; */
+
+            padding: 20px;
+
+            /* box-sizing:how the width and height gets applied to an element */
+
+            /* 2 types: a. content box(default) : in case of content box the actual width of the box will be equal to the border and padding and the width of the box. Actual width= width+border+padding
+                        b. borderbox */
+            box-sizing:border-box ;            
+
+        }
+
+        .card{
+            width: 300px;
+            height: 200px;
+            background-color: aquamarine;
+            border: 10px solid blue;
+            padding: 30px;
+        }
+
+        .content-box{
+            box-sizing: content-box;
+
+        }
+        .border-box{
+            background-color: brown;
+            margin-top: -100px;
+            box-sizing: border-box;
+        }
+
+        .right-box{
+            margin-top: -305px;
+    margin-left: 634px;
+        }
+        .circle{
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            border: 5px solid green;
+            border-radius: 50%;
+        }
+
+        .form{
+            width: 300px;
+            height: 600px;
+            border: 10px dashed red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, laboriosam animi? Veritatis aperiam dolore corporis, voluptatum quaerat at, dolor sapiente repudiandae accusantium nemo consectetur minima</div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div> -->
+
+    <div class="card content-box">content box</div>
+    <div class="card border-box">border-box</div>
+    <div class="card right-box"></div>
+
+    <div class="circle"></div>
+    <div class="form"></div>
+    
+</body>
+</html>

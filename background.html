@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 1000px;
+        /* background-image: url("https://wallpapers.com/images/featured/vertical-background-0ky9f0wy7qxg8h0x.jpg"); */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      p {
+        border: 15px darkviolet;
+        border-style: dashed;
+        margin: 1em 0;
+        padding: 30px;
+        background: linear-gradient(60deg, red, yellow, red, yellow, red);
+        font: 900 1.2em sans-serif;
+        text-decoration: underline;
+      }
+
+      .border-box {
+        background-clip: border-box;
+      }
+      .padding-box {
+        background-clip: padding-box;
+      }
+      .content-box {
+        background-clip: content-box;
+      }
+
+      .text {
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <p class="border-box">The background extends behind the border.</p>
+    <p class="padding-box">
+      The background extends to the inside edge of the border.
+    </p>
+    <p class="content-box">
+      The background extends only to the edge of the content box.
+    </p>
+    <p class="text">The background is clipped to the foreground text.</p>
+
+    <!-- <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, quos.</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima earum, non repudiandae qui, nemo consectetur, iusto alias ducimus cupiditate iure molestias officia eaque! Praesentium non iure sit odit totam repudiandae veniam quisquam illum laudantium quo enim modi consequuntur dolore dolor nostrum impedit pariatur nam illo nemo repellat soluta, voluptatibus quas.</p>
+
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a suscipit dignissimos aliquid illum ratione sapiente libero delectus, deserunt beatae omnis animi ea ullam autem. At magnam mollitia obcaecati esse. Doloremque eum tempore consectetur saepe laudantium animi maiores ex at, numquam soluta officiis exercitationem ab ut adipisci! Beatae fuga voluptates vel laboriosam. Animi totam officia non ducimus optio quo unde error eos labore, asperiores incidunt nemo. Tempore enim debitis et fugiat magnam, a veritatis, excepturi sit ducimus dolorum aliquam quidem placeat maiores! Sequi consequatur distinctio voluptatum nihil. Ad odio modi beatae laboriosam porro! Veniam quaerat expedita blanditiis et sint eligendi!</h1> -->
+  </body>
+</html>

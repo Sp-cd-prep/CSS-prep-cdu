@@ -1,0 +1,54 @@
+/* 
+* - universal selector : it will select all the elements present in the page
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.common-pro{
+    border: 10px solid red;
+    box-shadow: 10px 10px purple;
+    border-radius: 25px;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
+
+.header-box{
+    width: 400px;
+    height: 200px;
+    margin: 0px auto;
+    border: 10px solid red;
+    box-shadow: 10px 10px purple;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.green-border{
+    height: 600px;
+    border: 10px solid green;
+    position: relative;
+}
+
+.top-right{
+    position: absolute;
+    right: 30px;
+    top: 0px;
+}
+
+.bottom-left{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.bottom-right{
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+
