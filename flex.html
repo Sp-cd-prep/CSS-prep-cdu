@@ -38,17 +38,36 @@
 
       .parent{
         display: flex;
-        /* flex-direction: column; */
-        /* flex-wrap: wrap; */
-        justify-content: center;
-        align-items:center;
-        height: 100vh; 
+        flex-wrap: wrap;
+        height: 500px;
+        background-color: bisque;
+        border: 2px solid green;
+        
+        /* height: 100vh;  */
         /* vh-viewport height , viewport - visible area */
+      }
+      .align-con-start{
+        align-content: flex-start;
+      }
+      .align-con-end{
+        align-content: flex-end;
+      }
+      .align-con-center{
+        align-content: center;
+      }
+      .align-con-spacebet{
+        align-content: space-between;
+      }
+      .align-con-spacearo{
+        align-content:space-around;
+      }
+      .align-con-spaceeven{
+        align-content: space-evenly;
       }
       .child{
         width: 200px;
         height: 100px;
-        background-color: brown;
+        background-color: rgb(13, 231, 227);
         border: 5px solid black;
       }
     </style>
@@ -56,18 +75,87 @@
   <body>
 
 
-    <div class="parent">
-        <div class="child"></div>
-        <div class="child"></div>
-        <!-- <div class="child"></div>
+    <div class="parent align-con-start">
         <div class="child"></div>
         <div class="child"></div>
         <div class="child"></div>
         <div class="child"></div>
         <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div> -->
     </div>
+    <div class="parent align-con-end">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+  </div>
+  <div class="parent align-con-center">
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+</div>
+<div class="parent align-con-spacebet">
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+</div>
+<div class="parent align-con-spacearo">
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+</div>
+<div class="parent align-con-spaceeven">
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+</div>
    
     <!-- <div class="card">
       <div class="box">Box1</div>

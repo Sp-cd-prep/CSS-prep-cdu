@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 1px solid gray;
+        border-radius: 30px;
+        font-size: 20px;
+        height: 100px;        
+      }
+
+      /* flex-grow property default value:0
+      flex-shrink property default value:1 */
+
+      /* flex-shrink:1 means the item or the element will shrinkable */
+
+      /* flex-shrink:0 means when the item will meet its original width or initial width(flex-basis) then it will not going to shrink */
+
+      /* flex: grow shrink basis */
+
+      .signup {
+        flex:3 0 350px;
+        background-color: blueviolet;
+      }
+      .signin {
+        flex:3 0 350px;
+        background-color: blue;
+      }
+      button{
+        flex:1 0 150px;
+        background-color: brown;
+      }
+
+      /* total width:860px */
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="box signup">
+        <div>SIGN-UP</div>
+      </div>
+      <div class="box signin">
+        <div>SIGN-IN</div>
+      </div>
+      <button class="box">Submit</button>
+    </div>
+  </body>
+</html>
