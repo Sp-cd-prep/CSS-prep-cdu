@@ -1,0 +1,50 @@
+
+/* 1. the number of values in g-t-c and g-t-r depends upon how many columns and rows are there in the layout.
+
+2. g-t-c consider the width and g-t-r consider the height.
+
+3. we can use px values to set column and row but we can't adjust the unwanted space.
+
+4. Instead we can use "auto" but we can't set the different width and height values. 
+
+5. we can use "fr" like 1fr , 2fr,3fr and we can set the different width and height in ratio format. 
+
+6. if you are taking "auto" or "fr" values then you have to mention height in the parent container. */
+
+/* 7. repeat(value1, value2)- value1 indicates how many time i want to repeat, value2 is the width value itself */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 3fr 3fr ;
+    gap: 20px;
+    height: 400px;
+}
+
+.box{
+    border: 2px solid blue;
+}
+
+.box1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.box2{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.box3{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.box4{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.box5{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.box6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}

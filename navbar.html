@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            height: 80px;
+            background-color:brown;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items:center;
+        }
+
+        .logo{
+            color: white;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 0px 0px 5px rgb(216, 238, 135);
+        }
+    
+        .navbar-menu{
+            display: flex;
+            gap: 30px; 
+        }
+        a{
+            /* margin-right: 10px; */
+            text-decoration: none;
+            color: blanchedalmond;
+        }
+
+        a:hover{
+            color: chartreuse;
+        }
+
+
+        /* //mobile view */
+        @media only screen and (min-width:300px) and (max-width:600px){
+
+            /* we have to rewrite the css properties here and we should only write the codes which we want to change */
+
+            .navbar{
+                background-color: darkblue;
+                flex-direction: column;
+                height: auto;
+            }
+
+            .navbar-menu{
+                gap: 0px;
+                flex-direction: column;
+            }
+
+        }
+
+        /* Tablet view */
+        @media only screen and (min-width:600px) and (max-width:1100px){
+            .navbar{
+                background-color:purple;
+                flex-direction: column;
+                height: auto;
+            }
+
+            .navbar-menu{
+                gap: 0px;
+                flex-direction: column;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">SP.</div>
+        <div class="navbar-menu">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">GALLERY</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -38,15 +38,51 @@
         flex:3 0 350px;
         background-color: blue;
       }
-      button{
+      /* button{
         flex:1 0 150px;
         background-color: brown;
-      }
+      } */
 
       /* total width:860px */
+
+      .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        /* height: 200p; */
+      }
+
+      input{
+        height:40px;
+        background-color: bisque;
+        flex: 1 1 350px;
+      }
+
+      button{
+        height: 45px;
+        flex:1 0 80px ;
+        background-color: black;
+        color: white;
+      }
+
+
+     
     </style>
   </head>
   <body>
+
+
+    <div class="flex-container">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <button>Submit</button>
+    </div>
+
+
+
+<!-- 
 
     <div class="container">
       <div class="box signup">
@@ -56,6 +92,6 @@
         <div>SIGN-IN</div>
       </div>
       <button class="box">Submit</button>
-    </div>
+    </div> -->
   </body>
 </html>
