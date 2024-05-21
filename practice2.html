@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 500px;
+        position: relative; /* Needed for absolute positioning inside */
+        /* overflow: hidden; */
+      }
+      .box1 {
+        width: 300px;
+        height: 100%;
+        background-color: brown;
+        position: relative; /* Needed for absolute positioning inside */
+        overflow: hidden;
+      }
+      .right-con{
+        position: relative; 
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .box2 {
+        width: 300px;
+        height: 40%;
+        background-color: darkgreen;
+      }
+      .box3 {
+        width: 300px;
+        height: 40%;
+        background-color: darkblue;
+        
+      }
+      .above-card {
+        width: 270px;
+        height: 200px;
+        background-color:rgba(184, 135, 11, 0.79);
+        color: white;
+        font-size: 20px;
+        border-radius: 30px;
+        text-align: center;
+        padding-top: 40px;
+        position: absolute;
+        left: 230px;
+        transition:bottom 0.3s ease;
+        bottom: -200px; 
+      }
+      .above-card1 {
+        width: 260px;
+        height: 130px;
+        background-color:rgba(184, 135, 11, 0.79);
+        color: white;
+        font-size: 20px;
+        border-radius: 30px;
+        text-align: center;
+        /* padding-top: 40px; */
+        position: absolute;
+        left: 20px;
+        transition:bottom 0.3s ease;
+        bottom: -300px; 
+      }
+      .above-card2 {
+        width: 270px;
+        height: 200px;
+        background-color:rgba(184, 135, 11, 0.79);
+        color: white;
+        font-size: 20px;
+        border-radius: 30px;
+        text-align: center;
+        padding-top: 40px;
+        position: absolute;
+        left: 230px;
+        transition:bottom 0.3s ease;
+        bottom: -200px; 
+      }
+      .box1:hover {
+        bottom: 40px;
+        left: 230px;
+      }
+      .container:hover .above-card1{
+        bottom: 40px;
+        left: 20px;
+      }
+      .container:hover .above-card2{
+        bottom: 40px;
+        left: 230px;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <div class="box1">
+        <div class="above-card">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              inventore velit earum nihi
+            </p>
+        </div>
+    </div>
+        <div class="right-con">
+          <div class="box2">
+            <div class="above-card1">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  inventore velit earum nihi
+                </p>
+            </div>
+          </div>
+          <div class="box3">
+            <!-- <div class="above-card2">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  inventore velit earum nihi
+                </p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

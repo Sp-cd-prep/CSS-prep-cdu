@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+
+        .box{
+            width: 200px;
+            height: 200px;
+            /* border-radius: 50%; */
+            background: conic-gradient(red,yellow,green,blue);
+            /* margin: 150px auto; */
+            /* background-color: tomato; */
+            /* animation-name: sample;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function:linear;
+            animation-direction: alternate; */
+
+            animation:sample 2s infinite linear alternate;
+            animation-delay: 3s;
+        }
+
+        /* @keyframe - basically in keyframe we define the intermediate steps for the animation.
+        transform: we can define the animation types */
+        @keyframes sample {
+            0%{
+                transform:translate(x,y) ;
+            }
+            25%{
+                transform: translate(800px,0);
+            }
+
+            50%{
+                transform: translate(800px,400px);
+            }
+            75%{
+                transform: translate(0,400px);
+            }
+        }
+
+        /* rotate */
+        /* @keyframes sample{
+            0%{
+                transform:rotate(0deg) ;
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        } */
+
+        /* @keyframes sample{
+            0%{
+                transform: skew(-30deg,-50deg);
+            }
+            100%{
+                transform: skew(30deg,50deg);
+            }
+        } */
+
+        /* scale: scale(x,y): the default value is 1,1 */
+        /* @keyframes sample{
+            0%{
+                transform:scale(1,1);
+            }
+            100%{
+                transform: scale(0.5,0.5);
+            }
+        } */
+
+    </style>
+</head>
+<body>
+
+    <!-- animation types: translate,rotate,skew,scale -->
+    <!-- rotate,skew and scale will perform according to the center point. The element will not move from its center. -->
+
+    <!-- if im using translate then my element will move from its original position -->
+
+    <div class="box"></div>
+    
+</body>
+</html>

@@ -3,39 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        height: 500px;
-        border: 2px solid #333;
-        align-content: space-between;
-        /* align-content: space-between; */
+      * {
+        /* border: 1px solid red; */
+        box-sizing: border-box;
       }
 
-      .item {
-        height: 100px;
-        border: 1px solid #666;
-        margin: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 16px;
+      .main-container{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        /* place-items: center; */
+        margin: 0px auto;
       }
+      .one{
+        grid-column: 1/2;
+        grid-row: 1/3;
+      }
+      .two{
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+      .three{
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+
+      .parent{
+        width: 100%;
+        height: 300px;
+        border-radius: 30px;
+        background-image: url("./imageku.jpg");
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+      }
+      .one{
+        height: 100%;
+      }
+      .above-card {
+        width: 300px;
+        height: 200px;
+        background-color:rgba(184, 135, 11, 0.79);
+        color: white;
+        font-size: 20px;
+        border-radius: 30px;
+        text-align: center;
+        padding-top: 40px;
+        position: absolute;
+        left: 60px;
+        bottom: -200px; 
+        transition:all 0.3s ease;
+      }
+
+      .parent:hover .above-card{
+        bottom: 40px;
+        left: 60px;
+      }
+
     </style>
-    <title>align-content Example</title>
   </head>
   <body>
-    <div class="container">
-      <div class="item" style="flex-grow: 1">S.N</div>
-      <div class="item" style="flex-grow: 2">Name</div>
-      <div class="item" style="flex-grow: 4">Address</div>
-      <div class="item" style="flex-grow: 2">Mark </div>
-      <!-- <div class="item" style="flex-grow: 1">Item 5</div>
-      <div class="item" style="flex-grow: 1">Item 6</div>
-      <div class="item" style="flex-grow: 1">Item 6</div>
-      <div class="item" style="flex-grow: 1">Item 6</div>
-      <div class="item" style="flex-grow: 1">Item 6</div> -->
+
+    <div class="main-container">
+    <div class="parent one">
+      <div class="above-card">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          inventore velit earum nihi
+        </p>
+      </div>
     </div>
+
+    <div class="parent two">
+      <div class="above-card">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          inventore velit earum nihi
+        </p>
+      </div>
+    </div>
+
+    <div class="parent three">
+      <div class="above-card">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          inventore velit earum nihi
+        </p>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
