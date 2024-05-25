@@ -20,12 +20,12 @@
             animation-direction: alternate; */
 
             animation:sample 2s infinite linear alternate;
-            animation-delay: 3s;
+            /* animation-delay: 3s; */
         }
 
         /* @keyframe - basically in keyframe we define the intermediate steps for the animation.
         transform: we can define the animation types */
-        @keyframes sample {
+        /* @keyframes sample {
             0%{
                 transform:translate(x,y) ;
             }
@@ -39,7 +39,7 @@
             75%{
                 transform: translate(0,400px);
             }
-        }
+        } */
 
         /* rotate */
         /* @keyframes sample{
@@ -54,14 +54,14 @@
             }
         } */
 
-        /* @keyframes sample{
+        @keyframes sample{
             0%{
                 transform: skew(-30deg,-50deg);
             }
             100%{
                 transform: skew(30deg,50deg);
             }
-        } */
+        }
 
         /* scale: scale(x,y): the default value is 1,1 */
         /* @keyframes sample{

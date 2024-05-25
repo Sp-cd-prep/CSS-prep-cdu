@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .a>p {
+        background-color: aquamarine;
+      } */
+
+      /* h2+p{
+        background-color: tomato;
+      } */
+      h2~p{
+        background-color:goldenrod;
+      }
+
+      .list1>li{
+        list-style-type: georgian;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Combinators</h1>
+    <p>
+      combinators combine the selectors to provide them a useful relationship
+      and the position od content in the document
+    </p>
+
+    <pre>
+    1. Descendant selector(space) - select all the child elements that are present in side one specific element(parent).
+
+    2. Child selector(>) - it will affect elements under a direct parent. 
+    3. Adjacent sibling selector(+) - it is used to select an element that is directly after a specific element. or it will target the direct sibling.
+    4. General sibling selector(~) - it will target all the elements which is comes after a specific element. 
+   </pre
+    >
+
+
+<div class="main">
+    <ul class="list1">
+        <li>sample</li>
+        <li>sample</li>
+        <li>sample</li>
+        <li>sample</li>
+        <ol>
+            <li>demo</li>
+            <li>demo</li>
+            <li>demo</li>
+            <li>demo</li>
+        </ol>
+    </ul>
+</div>
+ 
+<div class="main2">
+    <ul class="list2">
+        <li>sample</li>
+        <li>sample</li>
+        <li>sample</li>
+        <li>sample</li>
+    </ul>
+</div>
+
+    <ul class="list3">
+        <li>sample</li>
+        <li>sample</li>
+        <li>sample</li>
+        <li>sample</li>
+    </ul>
+
+
+
+
+
+
+    <p>Descedant selector</p>
+
+    <div class="a">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
+        obcaecati?
+      </p>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
+        obcaecati?
+      </p>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <button>
+        <p>Lorem ipsum dolor</p>
+      </button>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
+        obcaecati?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
+        obcaecati?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
+        obcaecati?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
+        obcaecati?
+      </p>
+    </div>
+
+    <div class="b">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
+        obcaecati?
+      </p>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
+        obcaecati?
+      </p>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
+        obcaecati?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti,
+        obcaecati?
+      </p>
+    </div>
+  </body>
+</html>
